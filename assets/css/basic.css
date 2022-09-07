@@ -1,0 +1,114 @@
+@charset "UTF-8";
+* { box-sizing:border-box;}
+body { font-family:"맑은 고딕", Arial, Helvetica, sans-serif; font-size:16px; color:#333;  }
+a { color:inherit; }
+ul:after { display:block; content:""; clear:both; }
+
+/*header*/
+#header { position:relative; width:100%; background:#fff; z-index:100; }
+#header .top { border-bottom:1px solid #ccc; }
+#header .top .wrap { position:relative; max-width:1680px; height:45px; margin:auto; padding:5px 60px; }
+#header .top .wrap h2 {}
+#header .top .wrap .util_menu { position:absolute; right:60px; top:15px; }
+#header .top .wrap .util_menu li { position:relative;  display:inline-block; padding-right:8px; margin-right:5px; font-size:14px; }
+#header .top .wrap .util_menu li:after {  position:absolute; content:""; width:1px; height:16px; background: #e0e0e0; right:0; top:0}
+#header .top .wrap .util_menu li:last-child { padding-right:0; margin-right:0;}
+#header .top .wrap .util_menu li:last-child:after { display:none;}
+
+
+
+#header .bottom { border-bottom:1px solid #ccc; width:100%; background:#fff; transition:0.3s; }
+#header .bottom .wrap { position:relative; max-width:1680px;  margin:auto; padding:0 60px;  }
+#header .bottom .b_logo { display:inline-block; font-size:22px; font-weight:bold; letter-spacing:-0.5px; padding-right:3%; }
+
+#header .bottom .gnb_menu { display:inline-block; }
+#header .bottom .gnb_menu > ul { }
+#header .bottom .gnb_menu > ul > li { display:inline-block; padding:30px 10px  }
+#header .bottom .gnb_menu > ul > li>a { font-weight:bold;}
+#header .bottom .gnb_menu > ul > li:hover > a { color:#000; text-decoration:underline; }
+
+#header .bottom .search_area{ position:absolute; right:60px; top:18px; }
+#header .bottom .search_area .search_box { width:300px; border:1px solid #d8d8d8;  }
+#header .bottom .search_area .search_box input { width:230px; padding-left:10px; height:38px;line-height:38px; border:0; outline:0;  }
+#header .bottom .search_area .search_box button { width:62px; height:38px;  background:url('../img/mb_ico_srch.png') no-repeat center center / 22px; border:0; text-indent:-9999px; cursor:pointer; }
+
+#header .bottom.stick { position:fixed; top:0; left:0; }
+
+
+/*contents*/
+#contents {  }
+.main_page {}
+
+
+/*contents - main_visual*/
+.main_visual { text-align:center; }
+.main_visual img { width:100%; max-width:1720px;  }
+
+/*contents - main_page*/
+.main_page section { margin-top:100px; }
+.main_page .m_tit { font-size:40px; color:#998465; margin-bottom:50px; }
+.main_page .wrap { width:1400px; margin:auto; }
+.main_page img { width:100%; }
+
+/*contents - best_prd */
+.best_prd { }
+.best_prd li { float:left; width:450px; margin:0 25px 25px 0; }
+.best_prd li:nth-child(3n) { margin-right:0 }
+.best_prd .tit { margin-top:24px; font-size:21px; font-weight:bold; letter-spacing: -1px; }
+.best_prd .tit .sub-tit{ display:block; font-size:16px; font-weight:normal; color:#666; margin-bottom:10px; }
+
+.best_prd .more { display:inline-block; font-size:15px; background:url('../img/ico_arrow_beige.png') no-repeat 100% 50%; color:#998465; padding-right:13px; margin-top: 30px; }
+
+/* contents - e_shop_bn */
+.e_shop_bn { position:relative; text-align:center; }
+.e_shop_bn img { max-width:1900px; }
+.e_shop_bn .bn_txt { position:absolute; top:50%; left:50%;  transform:translate(-50%, -50%); width:1400px; margin:auto; text-align:left; font: 16px/1.8em '맑은 고딕',sans-serif;
+    letter-spacing:-0.07em ; color:#fff; }
+.e_shop_bn .bn_txt strong { display:block; font:bold 40px / 2em '맑은 고딕',sans-serif;  }
+
+/* footer */
+#footer { background:#111; color:#999; font-size:14px; line-height:1.8em;
+letter-spacing:-1px; margin-top:90px; }
+#footer .wrap { width:1400px; margin:auto;  }
+
+#footer .top {padding:50px 0;}
+#footer .top .wrap {  background:url('../img/mb_f_logo_wht.png') no-repeat 0 0 / 62px;  }
+#footer .top .top_right { float:right; }
+#footer .top .top_right div { float:left; padding-right:20px ;}
+#footer .top .top_right ul { position:relative; float:left; }
+#footer .top .top_right ul:nth-of-type(1) { padding:0 90px 0 20px; }
+#footer .top .top_right ul:nth-of-type(2) { padding:0 20px}
+#footer .top .top_right ul::before { position:absolute; left:0; content:""; width:1px; height:250px; background:#4b4b4b; } 
+
+
+#footer .top .address { clear:both;
+    }
+
+#footer .bottom { border-top:1px solid #333; padding:50px 0; }
+#footer .bottom .wrap { }
+#footer .bottom .wrap::after { display:block; content:""; clear:both; }
+#footer .bottom ul.menu { float:left; }
+#footer .bottom ul.menu li { float:left; border-left:1px solid #292929; padding:0 10px;}
+#footer .bottom ul.menu a { font-size:15px;   }
+#footer .bottom ul.menu li:first-child { border-left:none; padding-left:0 ; }
+
+#footer .bottom .toggle { position:relative; float:right; width:230px;  text-align:left; font-size:15px; }
+#footer .bottom .toggle button { display:block; line-height:40px; width:100%;background:transparent; border:1px solid #666; padding:0 15px; text-align:left; cursor:pointer }
+#footer .bottom .toggle button span { color:#999; font-size:15px;}
+#footer .bottom .toggle ul { display:none; position:absolute; bottom:100%; left:0; right:0;  border:1px solid #666; border-bottom:0; background:#111; padding:0 15px; }
+#footer .bottom .toggle ul li { padding:8px 0;}
+#footer .bottom .toggle ul li a { }
+
+#popup { position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.4); z-index:101;}
+.popup_wrap { position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:600px; }
+#popup img { width:100%;}
+#popup .popup_txt { background:#fff; text-align:center; font-size:20px; padding:30px; }
+
+#popup .popup_txt .tit_area { line-height:1.5em; }
+#popup .popup_txt .tit_area strong { display:block; font-size:40px; font-weight:bold; margin-bottom:30px;}
+#popup .popup_txt .btn_area { }
+#popup .popup_txt .btn_area a { display:inline-block; background:#998465; color:#fff; font-size:15px; padding:15px 40px; margin-top:40px;  }
+
+#popup .popup_btns { height:50px; padding-top:20px; color:#fff; }
+#popup .popup_btns label { float:left; }
+#popup .popup_btns .close { float:right; display:inline-block; width:26px; height:26px; background:url('../img/pc_main_close.png') no-repeat; text-indent:-9999px; }
